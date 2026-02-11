@@ -1,0 +1,11 @@
+node_modules/
+src/
+.git/
+.github/
+*.md 
+.eleventy.js 
+package.json
+package-lock.json
+.gitignore
+.nvmrc
+admin/

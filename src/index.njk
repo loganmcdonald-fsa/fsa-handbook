@@ -1,0 +1,38 @@
+---
+layout: default
+title: Home
+---
+
+<section class="hero">
+  <div class="grid-container">
+    <div class="grid-row">
+      <div class="tablet:grid-col-8">
+        <h1>{{ homepage.title }}</h1>
+        <p class="usa-intro">{{ homepage.intro }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="grid-container" style="padding: 3rem 0;">
+  <div class="grid-row">
+    <div class="tablet:grid-col-12">
+      
+      {% for section in homepage.sections %}
+      <div class="section-summary">
+        <h2>{{ section.name }}</h2>
+        <p>{{ section.description }}</p>
+        <ol class="section-links">
+          {% set sectionPosts = collections.all | reverse %}
+          {% for post in sectionPosts %}
+            {% if post.data.section == section.slug and post.data.layout == 'post' %}
+              <li><a href="{{ post.url }}">{{ post.data.title }}</a></li>
+            {% endif %}
+          {% endfor %}
+        </ol>
+      </div>
+      {% endfor %}
+
+    </div>
+  </div>
+</section>

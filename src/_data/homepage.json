@@ -1,0 +1,16 @@
+{
+  "title": "Federal Student Aid Handbook",
+  "intro": "The FSA Handbook is a centralized information hub providing information for how work is done across the FSA technology ecosystem.",
+  "sections": [
+    {
+      "name": "About",
+      "slug": "about",
+      "description": "Learn about this project, its purpose, and how it leverages modern web standards and accessibility best practices to help you build accessible, user-friendly government websites."
+    },
+    {
+      "name": "Getting Started",
+      "slug": "getting-started",
+      "description": "Everything you need to begin building with this starter site, from installation to deployment and content management."
+    }
+  ]
+}

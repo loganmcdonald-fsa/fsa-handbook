@@ -1,0 +1,54 @@
+backend:
+  name: github
+  repo: loganmcdonald-fsa/fsa-handbook
+  branch: main
+
+# Uncomment for local development
+# local_backend: true
+
+media_folder: "src/images"
+public_folder: "/images"
+
+collections:
+  - name: "homepage"
+    label: "Homepage"
+    files:
+      - label: "Homepage Content"
+        name: "homepage"
+        file: "src/_data/homepage.json"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Intro Text", name: "intro", widget: "text"}
+          - label: "Sections"
+            name: "sections"
+            widget: "list"
+            fields:
+              - {label: "Section Name", name: "name", widget: "string"}
+              - {label: "Section Slug", name: "slug", widget: "string", hint: "URL-friendly name (e.g., 'about', 'getting-started')"}
+              - {label: "Description", name: "description", widget: "text"}
+
+  - name: "about"
+    label: "About"
+    folder: "src/about"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Layout", name: "layout", widget: "hidden", default: "post"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Section", name: "section", widget: "hidden", default: "about"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Description", name: "description", widget: "string"}
+      - {label: "Body", name: "body", widget: "markdown"}
+
+  - name: "getting-started"
+    label: "Getting Started"
+    folder: "src/getting-started"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Layout", name: "layout", widget: "hidden", default: "post"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Section", name: "section", widget: "hidden", default: "getting-started"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Description", name: "description", widget: "string"}
+      - {label: "Body", name: "body", widget: "markdown"}

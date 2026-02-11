@@ -1,0 +1,10 @@
+---
+applications:
+- name: fsa-handbook
+  memory: 128M
+  disk_quota: 512M
+  instances: 1
+  buildpacks: 
+    - https://github.com/cloudfoundry/staticfile-buildpack
+  path: _site
+  stack: cflinuxfs4

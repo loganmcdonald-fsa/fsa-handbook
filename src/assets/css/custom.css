@@ -1,0 +1,436 @@
+/* Modern, clean theme - USWDS fonts hosted locally */
+
+/* Development banner - USWDS warning tokens */
+.usa-site-alert--warning {
+  background-color: #fef0c8; /* yellow-5 (warning-lighter) */
+}
+
+.usa-site-alert--warning .usa-alert {
+  background-color: #fef0c8; /* yellow-5 (warning-lighter) */
+  border-left-color: #e5a000; /* gold-30v (warning-dark) */
+  border-left-width: 0.5rem;
+}
+
+.usa-site-alert--warning .usa-alert__body {
+  max-width: none;
+  padding: 1rem 0;
+}
+
+.usa-site-alert--warning .usa-alert__text {
+  color: #1b1b1b;
+  margin: 0;
+}
+
+/* Clean header styling */
+.usa-header {
+  background-color: #ffffff;
+  border-bottom: 1px solid #dfe1e2;
+}
+
+.usa-logo__text a {
+  color: #1b1b1b;
+  font-weight: 700;
+}
+
+.usa-nav__primary-item a {
+  color: #1b1b1b;
+  font-weight: 500;
+}
+
+.usa-nav__primary-item a:hover {
+  background-color: #f0f0f0;
+  color: #005ea2;
+}
+
+.usa-current {
+  color: #005ea2 !important;
+  border-bottom: 2px solid #005ea2;
+}
+
+/* Hero section with blue background */
+.hero {
+  background-color: #0D4F8B;
+  padding: 3rem 0 2.5rem;
+  border-bottom: 1px solid #003E73;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #ffffff;
+  line-height: 1.2;
+}
+
+.hero p {
+  font-size: 1.25rem;
+  color: #ffffff;
+  margin-bottom: 1.5rem;
+  max-width: 65ch;
+}
+
+.hero .usa-button {
+  margin-top: 0.5rem;
+}
+
+/* Clean button styling */
+.usa-button {
+  background-color: #005ea2;
+  border-radius: 0.25rem;
+  font-weight: 500;
+}
+
+.usa-button:hover {
+  background-color: #1a4480;
+}
+
+.usa-button--outline {
+  color: #005ea2;
+  border: 2px solid #005ea2;
+  background-color: transparent;
+}
+
+.usa-button--outline:hover {
+  background-color: #005ea2;
+  color: #ffffff;
+}
+
+/* Section cards with clean styling */
+.section-card {
+  background: #ffffff;
+  padding: 2rem;
+  border-left: 4px solid #005ea2;
+  margin-bottom: 2rem;
+}
+
+.section-card h3 {
+  margin-top: 0;
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+}
+
+.section-card p {
+  color: #565c65;
+  margin-bottom: 1.25rem;
+}
+
+/* Post cards - clean list style with proper padding */
+.post-card {
+  padding: 1.5rem 0;
+  border-bottom: 1px solid #dfe1e2;
+}
+
+.post-card:last-child {
+  border-bottom: none;
+}
+
+.post-card h2,
+.post-card h3 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.post-card h2 a,
+.post-card h3 a {
+  color: #005ea2;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.post-card h2 a:hover,
+.post-card h3 a:hover {
+  text-decoration: underline;
+  color: #1a4480;
+}
+
+.post-meta {
+  color: #71767a;
+  font-size: 0.875rem;
+  margin-bottom: 0.5rem;
+}
+
+.post-card p {
+  color: #565c65;
+  margin-bottom: 0.75rem;
+}
+
+.post-card a:not(.usa-button) {
+  color: #005ea2;
+  text-decoration: none;
+}
+
+.post-card a:not(.usa-button):hover {
+  text-decoration: underline;
+}
+
+/* Single post styling */
+.post-header {
+  margin-bottom: 2.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #dfe1e2;
+}
+
+.post-header h1 {
+  margin-bottom: 0.75rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.post-content {
+  max-width: 65ch;
+}
+
+.post-content h2 {
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  font-size: 1.75rem;
+}
+
+.post-content h3 {
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+  font-weight: 600;
+  font-size: 1.375rem;
+}
+
+.post-content p {
+  margin-bottom: 1.25rem;
+}
+
+.post-content ul,
+.post-content ol {
+  margin-bottom: 1.25rem;
+  padding-left: 2rem;
+}
+
+.post-content li {
+  margin-bottom: 0.5rem;
+}
+
+.post-content a {
+  color: #005ea2;
+  text-decoration: underline;
+}
+
+.post-content a:hover {
+  color: #1a4480;
+}
+
+.post-content img {
+  max-width: 100%;
+  height: auto;
+  margin: 2rem 0;
+  border: 1px solid #dfe1e2;
+  border-radius: 0.25rem;
+}
+
+.post-content pre {
+  background-color: #f0f0f0;
+  padding: 1.25rem;
+  border-radius: 0.25rem;
+  overflow-x: auto;
+  margin: 1.5rem 0;
+  border: 1px solid #dfe1e2;
+}
+
+.post-content code {
+  background-color: #f0f0f0;
+  padding: 0.125rem 0.375rem;
+  border-radius: 0.25rem;
+  font-size: 0.875em;
+}
+
+.post-content pre code {
+  background-color: transparent;
+  padding: 0;
+  font-size: 0.875rem;
+}
+
+.post-content blockquote {
+  border-left: 4px solid #005ea2;
+  padding-left: 1.5rem;
+  margin: 1.5rem 0;
+  color: #565c65;
+  font-style: italic;
+}
+
+/* Navigation breadcrumbs */
+.breadcrumb {
+  padding: 1rem 0;
+  background-color: #f9f9f9;
+  border-bottom: 1px solid #dfe1e2;
+  font-size: 0.875rem;
+}
+
+.breadcrumb a {
+  color: #005ea2;
+  text-decoration: none;
+}
+
+.breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+/* Footer styling */
+.usa-footer {
+  background-color: #f0f0f0;
+  border-top: 1px solid #dfe1e2;
+}
+
+.usa-footer__secondary-section {
+  background-color: #1f1f1f;
+  color: #ffffff;
+  padding: 2rem 0;
+}
+
+.usa-footer__secondary-section a {
+  color: #ffffff;
+}
+
+.usa-footer__secondary-section a:hover {
+  color: #dfe1e2;
+}
+
+.usa-footer__links {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem 2rem;
+}
+
+.usa-footer__links li {
+  display: inline;
+}
+
+/* Homepage specific */
+.homepage-section {
+  padding: 3rem 0;
+  border-bottom: 1px solid #dfe1e2;
+}
+
+.homepage-section:last-of-type {
+  border-bottom: none;
+}
+
+.homepage-section h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+/* Section summary styling like TTS Handbook */
+.section-summary {
+  margin-bottom: 3rem;
+  padding-top: 2rem;
+  border-top: 4px solid #00bde3;
+}
+
+.section-summary:first-child {
+  padding-top: 0;
+  border-top: none;
+}
+
+.section-summary h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.section-summary > p {
+  font-size: 1rem;
+  color: #1b1b1b;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.section-links {
+  list-style: none;
+  counter-reset: section-counter;
+  padding-left: 0;
+  margin: 0;
+}
+
+.section-links li {
+  counter-increment: section-counter;
+  margin-bottom: 0.5rem;
+  position: relative;
+  padding-left: 2rem;
+}
+
+.section-links li::before {
+  content: counter(section-counter) ".";
+  position: absolute;
+  left: 0;
+  color: #71767a;
+  font-weight: 400;
+}
+
+.section-links a {
+  color: #005ea2;
+  text-decoration: underline;
+  font-weight: 400;
+}
+
+.section-links a:hover {
+  color: #1a4480;
+  text-decoration: none;
+}
+
+/* Utility classes */
+.usa-intro {
+  font-size: 1.25rem;
+  color: inherit;
+}
+
+/* Ensure proper padding on mobile and all screen sizes */
+.grid-container {
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
+  max-width: 64rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 64em) {
+  .grid-container {
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+  }
+}
+
+/* Specific fix for section pages - ensure content has padding */
+section .grid-container,
+.hero .grid-container,
+main .grid-container {
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
+}
+
+@media (min-width: 64em) {
+  section .grid-container,
+  .hero .grid-container,
+  main .grid-container {
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+  }
+}
+
+/* Additional mobile padding fixes */
+@media (max-width: 640px) {
+  .post-card,
+  .section-card,
+  .post-content,
+  .post-header {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  
+  body {
+    overflow-x: hidden;
+  }
+}
